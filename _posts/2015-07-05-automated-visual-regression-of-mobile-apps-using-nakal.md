@@ -3,14 +3,37 @@ layout: post
 title: "Automated Visual regression of mobile apps using nakal"
 description: ""
 categories: automation testing
+image: true
 tags: []
 ---
 
+# The Problem:
 
-In mobile apps market, looks of an application is extremely important. With long running projects, any minor
-refactoring can change your app's looks.
-While we have functional testing tools like appium and calabash, its equally important to have some test coverage
- around looks of your app. And, with nakal gem we can automate the visual testing of ios and android.
+While automated functional tests using appium or calabash acts as safety net, there is something missing.
+Often, we find issues like:
+
+- "Sign-In button has shifted a bit and user have to scroll down to see it"
+
+- "We asked to change background color of screen-X, it got changed for Screen-Y screen as well"
+
+- "Why has fonts of this link become so tiny?"
+
+For mobile apps, look and feel of an application is extremely important. With long running projects, any minor
+refactoring can change your app's looks. functional testing tools like calabash Or Appium can not help us in this case.
+
+Nakal gem fills above gap. With this, we can extend any existing mobile automation framework to support automated visual regression testing.
+
+Here is an sample output with expected_screen, actual_screen, and difference_screen :
+
+
+
+{% if page.image %}
+<div class="post-img">
+<img style="height:426px;width:240px" src=" {{site.baseurl}}/img/new_note.png"/>
+<img style="height:426px;width:240px" src=" {{site.baseurl}}/img/new_note_current.png"/>
+<img style="height:410px;width:240px" src=" {{site.baseurl}}/img/new_note_diff.png"/>
+</div>
+{% endif %}
 
 # Nakal
 
@@ -104,7 +127,7 @@ put these contents in your nakal.yml file inside config/nakal.yml
 		 right: 18
 		 left: 0
 		 bottom: 0
-		 screen_name_to_be_masked: {mask_region_1: [66,424,340,478],mask_region_2: [76,524,440,578]}
+		 screen_name_to_be_masked: {mask_region_1: [start_x,start_y,end_x,end_y],mask_region_2: [start_x,start_y,end_x,end_y]}
 
 
 ## You can see source here [Nakal](https://github.com/rajdeepv/nakal)
