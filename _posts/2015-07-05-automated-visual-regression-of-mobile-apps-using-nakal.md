@@ -115,12 +115,12 @@ put these contents in your nakal.yml file inside config/nakal.yml
      feature/sub_feature/current_screen_name: {mask_region_1: [66,424,340,478],mask_region_2: [76,524,440,578]}
 
 ## Note
-1. There is implicit wait of 30 sec until current screen matches baseline. This timeout can be changed by setting:
+* There is implicit wait of 30 sec until current screen matches baseline. This timeout can be changed by setting:
 
 		Nakal.timeout = new_timeout_value
 
 
-2. you can specify the areas of a screen you want to mask/ignore while comparing in nakal.yml as below:
+* you can specify the areas of a screen you want to mask/ignore while comparing in nakal.yml as below:
 
 		samsung_galaxy_s3:
 		 top: 50
@@ -128,6 +128,11 @@ put these contents in your nakal.yml file inside config/nakal.yml
 		 left: 0
 		 bottom: 0
 		 screen_name_to_be_masked: {mask_region_1: [start_x,start_y,end_x,end_y],mask_region_2: [start_x,start_y,end_x,end_y]}
+
+* If you want to set certain threshold while comparing. You can pass option as:
+
+		diff_metric = nakal_execute("current_screen_name",{:acceptable_diff => "#{your_acceptable_diff_metric}".to_f})
+
 
 
 ## You can see source here [Nakal](https://github.com/rajdeepv/nakal)
