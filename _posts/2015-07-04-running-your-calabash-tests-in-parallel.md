@@ -3,6 +3,7 @@ layout: post
 title: "Running your calabash tests in parallel"
 description: ""
 categories: automation parallel testing
+excerpt_separator: <!--more-->
 ---
 
 I have been working on automation of android app using calabash for a while. One challenge I see with lots of automated tests is they take long to execute. To solve this problem I created a ruby gem ‘parallel_calabash‘
@@ -18,7 +19,7 @@ you can watch my talk at VodQA here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDZHEd4DL2s" frameborder="0" allowfullscreen></iframe>
 
-Here is setup guide from Readme.md
+<!--more-->
 
 
 

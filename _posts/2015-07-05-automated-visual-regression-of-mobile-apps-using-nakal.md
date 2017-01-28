@@ -5,6 +5,7 @@ description: ""
 categories: automation testing
 image: true
 tags: []
+excerpt_separator: <!--more-->
 ---
 
 # The Problem:
@@ -21,7 +22,9 @@ Often, we find issues like:
 For mobile apps, look and feel of an application is extremely important. With long running projects, any minor
 refactoring can change your app's looks. functional testing tools like calabash Or Appium can not help us in this case.
 
-Nakal gem fills above gap. With this, we can extend any existing mobile automation framework to support automated visual regression testing.
+Nakal gem fills above gap. With this, we can extend any existing mobile automation framework to support automated visual regression testing.  
+
+<!--more-->
 
 Here is an sample output with expected_screen, actual_screen, and difference_screen :
 
