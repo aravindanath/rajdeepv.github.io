@@ -2,7 +2,7 @@
 .header {
   background: url("../img/bg.jpeg") 50% 0 no-repeat fixed;
   width: 100%;
-  min-height: 400px;
+  min-height: 200px;
   margin: 0 auto;
   padding: 0; }
   .header h2 {
@@ -12,7 +12,7 @@
     font-weight: 900;
     color: #fff;
     letter-spacing: 0.2em;
-    margin-top: 10%; }
+    margin-top: 0%; }
     .header h2 a {
       margin-left: 0%;
       color: #fff; }
@@ -42,9 +42,9 @@
         color: #00b3ee; }
 
 .post-loop {
-  margin-top: 10%;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 10%; }
   @media screen and (max-width: 360px) {
     .post-loop {
