@@ -1,6 +1,6 @@
 /*This is the header section styles*/
 .header {
-  background: url("../img/bg.jpeg") 50% 0 no-repeat fixed;
+  background: linear-gradient(black, white);
   width: 100%;
   min-height: 200px;
   margin: 0 auto;
