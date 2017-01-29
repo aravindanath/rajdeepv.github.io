@@ -11,7 +11,7 @@
     font-size: 3em;
     font-weight: 900;
     color: #fff;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
     margin-top: 0%; }
     .header h2 a {
       margin-left: 0%;
@@ -24,13 +24,25 @@
     color: #fff;
     letter-spacing: .1em;
     margin-top: 2%; }
-  .header a {
-    text-decoration: none !important;
-    margin-left: 80%;
-    color: #fff; }
-    @media screen and (max-width: 360px) {
-      .header a {
-        margin-left: 60%; } }
+
+      .social{
+          margin-left: 80%;
+          color: #fff;
+
+      }
+
+        .social i {
+            align-content: center;
+            color: #fff
+
+        }
+  /*.header a {*/
+    /*text-decoration: none !important;*/
+    /*margin-left: 80%;*/
+    /*color: #fff; }*/
+    /*@media screen and (max-width: 360px) {*/
+      /*.header a {*/
+        /*margin-left: 60%; } }*/
   .header .tab {
     font-weight: 900;
     font-size: 1.4em; }

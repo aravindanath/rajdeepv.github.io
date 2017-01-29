@@ -3,8 +3,13 @@
 <section class="header" id="header">
 
 
+    <!--<a class="navbar-brand mr-auto" href="{{ "/" | relative_url}}"><img src="./img/profile_pic.jpg" />{{ site.title | escape }}</a>-->
 
-    <a class="tab pi-default pi-big pi-flat" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i> My Github</a>
+    <div class="social">
+        <a class="tab" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-2x fa-github-square 3x"></i></a>
+        <a class="tab" target="_blank" href="https://uk.linkedin.com/in/rajdeepvarma"><i class="fa fa-2x fa-linkedin-square 3x"></i></a>
+    </div>
+
 
     <!-- Main Head Title -->
     {% if site.title %}<h2><a href="{{site.baseurl}}/">{{site.title}}</a></h2>{% endif %}
